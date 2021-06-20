@@ -1,0 +1,80 @@
+.icon{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.icon img{
+    height: 60px;
+    padding: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.header-nav > .header-nav-row{
+    display: contents;
+
+}
+
+.nav > .navbar{
+    padding: 0;  
+}
+
+/* change button's padding */
+.nav > .navbar > .navbar-collapse > .nav-left > .mr-auto > a{
+    padding: 8px 20px;
+}
+
+.nav{
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar{
+    padding-left: 0px;
+
+}
+
+.nav-left {
+    align-items: normal;
+    font-weight: 600;
+    -ms-display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-left:hover{
+    
+}
+
+.nav-left img{
+    height: 14px;
+    margin-right: 4px;
+}
+
+.nav-rig{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 .75rem;
+    font-size: .875rem;
+    margin-bottom: 0;
+    float: right;
+    right: 0;
+    position: static; 
+}
+
+/* hide info on phone */
+@media screen and (max-width: 995px){
+    .nav-rig{
+        display: none;
+    }
+
+}

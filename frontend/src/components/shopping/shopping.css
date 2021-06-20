@@ -1,0 +1,88 @@
+.shoppingpage {
+    margin-top: 20px;
+    width: 100%;
+    padding-right: 0;
+    max-width: 1559px;
+}
+
+.itempage {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.title{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Make side menu looks ok */
+.accordion>.card {
+    overflow: hidden;
+    border: none;
+}
+
+.accordion>.card>.card-header {
+    background-color: #f1f2f3;
+    border: none;
+    font-weight: bold;
+}
+
+
+
+/* to make two dd in one line */
+.sort > .cate > .cate1{
+    display: inline;
+}
+.sort > .cate > .cate2{
+    display: inline;
+    margin-left: 10px;
+}
+/* ... */
+
+
+.sort > .sort-by {
+    display: flex;
+    float: right;
+    right: 0;
+    position: static;
+}
+
+.menu{
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu > li {
+    padding-bottom: 8px;
+    color: #007837;
+}
+
+
+/* dd style */
+.sort > .cate > .dropdown > .dropdown-toggle {
+    color: #39464e;
+    background-color: #fff;
+    border-color: #b4b9bc;
+}
+
+.sort > .sort-by > .dropdown > .dropdown-toggle {
+    color: #39464e;
+    background-color: #fff;
+    border-color: #b4b9bc;
+    margin-left: 10px;
+}
+/* ... */
+
+
+@media screen and (max-width: 769px){
+    .side{
+        width: 144px;
+        padding: 0;
+    }
+    /* Make side menu looks ok */
+    .accordion>.card>.card-header {
+        background-color: #fff;
+        font-weight: bold;
+    }
+
+}

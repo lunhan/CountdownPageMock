@@ -1,0 +1,58 @@
+.license{
+    background-color: #007837;
+    bottom: 0;
+    color: white;
+    height: 62px;
+    text-align: center;
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}   
+
+.breadcrumb {
+    background-color: #007837;
+  }
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: "|";
+}
+
+.lic_logo {
+    height: 38px;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+.fav{
+    height: 22px;
+    padding: 3px;
+    padding-right: 5px;
+}
+
+ul{
+    list-style: none;
+    /* display: inline-block; */
+    vertical-align: top;
+}
+
+.container{
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 769px){
+    .bottom-nav>.col-sm-12>ul>li{
+        display: none;
+    }
+
+    .bottom-nav>.col-sm-12>ul{
+        display: block;
+        padding-left: 5px;
+    }
+
+}

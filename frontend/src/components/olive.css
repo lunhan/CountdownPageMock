@@ -1,0 +1,19 @@
+.olive-icon{
+    background-color: transparent;
+    border: none;
+}
+
+.o-logo{
+    height: 70px;
+    position: relative;
+}
+
+.ask{
+    background-color: #39464e;
+    color: white;
+    position: relative;
+    padding: 10px;
+    padding-right: 20px;
+    right: -25px;
+    border-radius: 6px;
+}
