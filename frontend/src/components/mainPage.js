@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, React} from 'react';
 import home from '../static/home.png';
 import './mainPage.css';
 import Shopping from './shopping/shopping';
@@ -19,7 +19,7 @@ import {
 
 
 export default function MainPage(){
-    const [id, setId] = React.useState([])
+    const [id, setId] = useState([])
 
 
     return(
@@ -46,8 +46,8 @@ export default function MainPage(){
                         <Route exact path='/'>
                             <Shopping/>
                         </Route>
-                        <Route exact path='/:id'>
-                            <Detail id={id}/>
+                        <Route exact path='/detail'>
+                            <Detail/>
                         </Route>   
                     </div>
                 </Switch>

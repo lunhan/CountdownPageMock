@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './items.css';
 import pic from '../../../static/product.png';
-
+import { useHistory } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
@@ -13,6 +13,9 @@ export default function Shopping(){
     const [desc, setDesc] = useState(0);
     const [qut, setQut] = useState(0);
     const [unit, setUnit] = useState('g');
+
+    //setUseHistory here
+    const history = useHistory();
 
     const [items] = useState([
         {
@@ -183,6 +186,10 @@ export default function Shopping(){
         },
     ]);
 
+    //this function will direct page to path/deatil
+    function goDeatils() {
+        history.push('/detail');
+      }
 
 
     function descInfo(price, weight){
@@ -202,17 +209,7 @@ export default function Shopping(){
         <div className="page">
             <ul className="ulStyle">
                 {items.map((item, index) =>
-                // <li>
-                //     <div className="card">
-                //     <img className="card-img-top" src="..." alt="Card image cap"/>
-                //     <div className="card-body">
-                //         <h5 className="card-title">Card title</h5>
-                //         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                //     </div>
-                //     </div>
-                // </li>
-                    //<div className="col-sm-12 col-md-3 box">
-                        <Card  className="card col-sm-12" key={index}>
+                    <Card  className="card col-sm-12" key={index} onClick={e => goDeatils()}>
                         <Card.Img variant="top" src={pic} />
                         <div className="body">
                         <Card.Body>
@@ -237,11 +234,8 @@ export default function Shopping(){
                         <div className="button">
                             <Button variant="primary green">Add to trolley</Button>
                         </div>
-                        
-                        </Card>
-                    //</div>
-
                     
+                    </Card>
                 )}
             </ul>
 

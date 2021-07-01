@@ -12,7 +12,6 @@ export default function Detail(){
             photo:{pic},
             name:'Butter',
             weight:500,
-            desc:(price/weight)*100,
             qut: 100,
             unit: 'g',
             price1: '16',
@@ -22,6 +21,7 @@ export default function Detail(){
 
     return(
         <div>
+            <h1>hello world</h1>
 
         </div>
     );
